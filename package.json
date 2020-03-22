@@ -1,0 +1,12 @@
+{
+  "name": "multipage-demo",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:dotkiro/multipage-demo.git",
+  "author": "Kiro <dotkiro@gmail.com>",
+  "license": "MPL-2.0",
+  "scripts": {
+    "start": "gulp",
+    "build": "NODE_ENV=production gulp"
+  }
+}
