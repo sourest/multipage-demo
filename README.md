@@ -1,5 +1,5 @@
 # multipage-demo
-multipage demo
+Multipage demo
 
 ## Get project
 
@@ -22,8 +22,33 @@ npm start # or use yarn start
 
 ## Directory
 
-src put your html files
-  * js put your javascript codes
-  * less put your less codes
-  * css put your css codes
-  * assets put your other assets
+```
+multipage-demo
+├── README.md
+├── .gitignore
+├── gulpfile.js
+├── LICENSE
+├── package.json
+├── src                      // you can put your html files here
+│   ├── index.html
+│   ├── about.html
+│   ├── js                   // JavasSript codes
+│   │   ├── index.js
+│   │   └── ...
+│   │
+│   ├── less                 // less style codes
+│   │   ├── index.less
+│   │   └── ...
+│   │
+│   ├── css                  // css style codes
+│   │   ├── index.css
+│   │   └── ...
+│   │
+│   └── assets               // other assets
+│       ├── image.jpg
+│       ├── iconfont.ttf
+│       ├── image.svg
+│       └── ...
+└── dist                     // output directory
+```
+
