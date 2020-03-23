@@ -1,6 +1,6 @@
 {
   "name": "multipage-demo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "index.js",
   "repository": "git@github.com:dotkiro/multipage-demo.git",
   "author": "Kiro <dotkiro@gmail.com>",
@@ -8,5 +8,22 @@
   "scripts": {
     "start": "gulp",
     "build": "NODE_ENV=production gulp"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-content-includer": "^0.0.7",
+    "gulp-eslint": "^6.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-uglify": "^3.0.2"
   }
 }

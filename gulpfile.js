@@ -134,17 +134,30 @@ const distClearTask = () => del(OUTPUT_BASE_PATH)
  */
 const serve = callback => () => {
 
-  gulp.watch(config.paths.input.html, htmlConverter)
-  gulp.watch(config.paths.input.less, lessConverter)
-  gulp.watch(config.paths.input.css, cssConverter)
-  gulp.watch(config.paths.input.js, jsConverter)
-  gulp.watch(config.paths.input.assets, assetsConverter)
-  gulp.watch(config.paths.input.templates, htmlConverter)
-
   const browserSyncer = browserSync.create()
+
+  const reload = cb => {
+    browserSyncer.reload()
+    cb()
+  }
+
+  const watch = (path, ...tasks) => gulp.watch(
+    path,
+    { events: 'all' },
+    gulp.series(...tasks, reload)
+  )
+
+  watch(config.paths.input.html, htmlConverter)
+  watch(config.paths.input.less, lessConverter)
+  watch(config.paths.input.css, cssConverter)
+  watch(config.paths.input.js, jsConverter)
+  watch(config.paths.input.assets, assetsConverter)
+  watch(config.paths.input.templates, htmlConverter)
+
+  
   browserSyncer.init({
     // open: 'ui',
-    server: OUTPUT_PATH,
+    server: OUTPUT_BASE_PATH,
     startPath: "/index.html",
     notify: false,
     port: 8000
