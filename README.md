@@ -1,5 +1,8 @@
 # multipage-demo
-Multipage demo
+
+This is a multipage project demo created for developers.
+If this catch your heart, only a star please.
+And thank you very much!
 
 ## Get project
 
