@@ -8,7 +8,7 @@ And thank you very much!
 
 1. Clone the repository.
 ``` shell
-git clone git@github.com:dotkiro/jero-painting.git  # or use https
+git clone git@github.com:dotkiro/multipage-demo.git  # or use https
 ```
 
 2. Install all node packages.
